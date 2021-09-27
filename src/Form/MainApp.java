@@ -29,7 +29,7 @@ public class MainApp extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
+        jPanel2 = grafica.obtieneGrafica();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
@@ -240,4 +240,5 @@ public class MainApp extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel labelArreglos;
     // End of variables declaration//GEN-END:variables
+   Entidades.Grafica grafica = new Entidades.Grafica("Mi titulo","x","y");
 }
