@@ -35,7 +35,7 @@ public class MainApp extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
+        jPanel2 = grafica.obtieneGrafica();
         jScrollPane1 = new javax.swing.JScrollPane();
         tablaCoordenadas = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
@@ -279,4 +279,5 @@ public class MainApp extends javax.swing.JFrame {
     private javax.swing.JLabel labelArreglos;
     private javax.swing.JTable tablaCoordenadas;
     // End of variables declaration//GEN-END:variables
+   Entidades.Grafica grafica = new Entidades.Grafica("Mi titulo","x","y");
 }
