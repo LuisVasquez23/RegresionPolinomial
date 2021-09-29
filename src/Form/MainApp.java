@@ -6,6 +6,7 @@
 package Form;
 
 import Entidades.Matriz;
+import java.text.DecimalFormat;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -186,9 +187,9 @@ public class MainApp extends javax.swing.JFrame {
         jLabel3.setText("}");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 310, -1, -1));
 
-        funcionLabel.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        funcionLabel.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         funcionLabel.setForeground(new java.awt.Color(204, 204, 204));
-        jPanel1.add(funcionLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, -1, -1));
+        jPanel1.add(funcionLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 160, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(204, 204, 204));
@@ -364,10 +365,11 @@ public class MainApp extends javax.swing.JFrame {
                 Rz = determinanteZ / determinanteSistema;
                 
                 String funcionMensaje = "";
-                
-                funcionMensaje += Rx;
-                funcionMensaje += ((Ry > 0)?"+":"-")+Ry+"x";
-                funcionMensaje += ((Rz > 0)?"+":"-")+Rz+"x^2";
+                funcionMensaje += getTwoDecimals(Double.toString(Rx));
+                funcionMensaje += (Ry > 0)?("+"+getTwoDecimals(Double.toString(Ry)) + " X"):(" "+getTwoDecimals(Double.toString(Ry)) + " X") ;
+                funcionMensaje += (Rz > 0)?("+"+getTwoDecimals(Double.toString(Rz)) + " X^2"):(" "+getTwoDecimals(Double.toString(Rz)) + " X^2") ;
+
+                System.out.println(funcionMensaje);
                 
                 this.funcionLabel.setText(funcionMensaje);
             }
@@ -389,6 +391,11 @@ public class MainApp extends javax.swing.JFrame {
                    -((matriz[0][2] * matriz[1][1]* matriz[2][0])+(matriz[0][0] * matriz[2][1]* matriz[1][2])+(matriz[2][2] * matriz[1][0]* matriz[0][1]));
         
         return resultado;
+    }
+    
+    private static String getTwoDecimals(String valor){
+        DecimalFormat df = new DecimalFormat("00.00");
+        return df.format(Double.parseDouble(valor));
     }
     /**
      * @param args the command line arguments
