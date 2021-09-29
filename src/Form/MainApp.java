@@ -183,16 +183,17 @@ public class MainApp extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        
+        this.modeloTabla.getDataVector().removeAllElements();
+        
         try {
             cantidadPuntos = (this.inputCantidadPuntos.getText().isEmpty())?0:Integer.parseInt(this.inputCantidadPuntos.getText());
             this.puntos = new double[cantidadPuntos][2];
             
             if (cantidadPuntos == 0) {
                 JOptionPane.showMessageDialog(null,"Por favor ingresa un valor mayor a 0");
-                this.modeloTabla.getDataVector().removeAllElements();
             }else{
                 
-                this.modeloTabla.getDataVector().removeAllElements();
                 
                 for (int i = 0; i < cantidadPuntos; i++) {
                     double x = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el valor de X" + i));
@@ -214,6 +215,8 @@ public class MainApp extends javax.swing.JFrame {
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
             this.modeloTabla.getDataVector().removeAllElements();
+            String[] datos = {};
+            this.modeloTabla.addRow(datos);
         }
         
         this.inputCantidadPuntos.setText("0");
