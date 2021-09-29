@@ -35,7 +35,6 @@ public class MainApp extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jPanel2 = grafica.obtieneGrafica();
         jScrollPane1 = new javax.swing.JScrollPane();
         tablaCoordenadas = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
@@ -55,6 +54,7 @@ public class MainApp extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         labelArreglos = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(61, 86, 178));
@@ -63,21 +63,6 @@ public class MainApp extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(61, 86, 178));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 479, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 160, Short.MAX_VALUE)
-        );
-
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, -1, 160));
 
         tablaCoordenadas.setBackground(new java.awt.Color(204, 204, 204));
         tablaCoordenadas.setModel(new javax.swing.table.DefaultTableModel(
@@ -178,6 +163,19 @@ public class MainApp extends javax.swing.JFrame {
 
         labelArreglos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Grupo 6.png"))); // NOI18N
         jPanel1.add(labelArreglos, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 310, 320, 220));
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 510, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 190, Short.MAX_VALUE)
+        );
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 510, 190));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 570, 570));
 
