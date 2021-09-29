@@ -14,7 +14,6 @@ import javax.swing.table.DefaultTableModel;
  */
 public class MainApp extends javax.swing.JFrame {
 
-    double[][] puntos;
     int cantidadPuntos;
     DefaultTableModel modeloTabla;
     
@@ -181,26 +180,52 @@ public class MainApp extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
+    double sumatoria(double[] array){
+        double suma = 0;
+        
+        for (int i = 0; i < array.length; i++) {
+            suma += array[i];
+        }
+        
+        return suma;
+    }
+    
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        
+        double Sxi , Sxi2 , Sxi3 , Sxi4 , Syi , Sxi2yi , Sxiyi;
         
         this.modeloTabla.getDataVector().removeAllElements();
         
         try {
             cantidadPuntos = (this.inputCantidadPuntos.getText().isEmpty())?0:Integer.parseInt(this.inputCantidadPuntos.getText());
-            this.puntos = new double[cantidadPuntos][2];
+            double[] xi = new double[cantidadPuntos];
+            double[] yi = new double[cantidadPuntos];
+            
+            double[] xi2 = new double[cantidadPuntos] , xi3 = new double[cantidadPuntos];
+            double[] xi4 = new double[cantidadPuntos] , xiyi = new double[cantidadPuntos];
+            double[] xi2yi = new double[cantidadPuntos];
             
             if (cantidadPuntos == 0) {
                 JOptionPane.showMessageDialog(null,"Por favor ingresa un valor mayor a 0");
             }else{
                 
-                
+                // Asignacion y calculo de puntos
                 for (int i = 0; i < cantidadPuntos; i++) {
                     double x = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el valor de X" + i));
                     double y = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el valor de Y" + i));
 
-                    puntos[i][0] = x ; // Valor de X
-                    puntos[i][1] = y ; // Valor de Y
+                    xi[i] = x ; // Valor de X
+                    yi[i] = y ; // Valor de Y
+                    
+                                        
+                    // Los valores elevados
+                    xi2[i] = Math.pow(x, 2);
+                    xi3[i] = Math.pow(x, 3);
+                    xi4[i] = Math.pow(x, 4);
+                    
+                    xiyi[i] = x*y;
+                    xi2yi[i] = xi2[i] * y;
                     
                     String[] datos = {
                         Double.toString(x),
@@ -210,10 +235,14 @@ public class MainApp extends javax.swing.JFrame {
                     this.modeloTabla.addRow(datos);
                 }
             
+                // Obtener sumatoria
+                Sxi = sumatoria(xi); // Sumatoria de xi
+                Sxi2 = sumatoria(xi2); // Sumatoria de xi^2
+                Sxi3 = sumatoria(xi3); // Sumatoria de xi^3
             }
             
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
+            JOptionPane.showMessageDialog(null, "Sucedio un error con el dato ingresado. Hazlo de nuevo");
             this.modeloTabla.getDataVector().removeAllElements();
             String[] datos = {};
             this.modeloTabla.addRow(datos);
