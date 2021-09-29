@@ -52,8 +52,13 @@ public class MainApp extends javax.swing.JFrame {
         Sxy = new javax.swing.JLabel();
         S3x3 = new javax.swing.JLabel();
         S3x4 = new javax.swing.JLabel();
-        labelArreglos = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
+        Sy1 = new javax.swing.JLabel();
+        Sy2 = new javax.swing.JLabel();
+        Sy3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        funcionLabel = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(61, 86, 178));
@@ -76,7 +81,7 @@ public class MainApp extends javax.swing.JFrame {
         tablaCoordenadas.setRowSelectionAllowed(false);
         jScrollPane1.setViewportView(tablaCoordenadas);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 230, 110, 300));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 110, 300));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(230, 230, 230));
@@ -97,69 +102,100 @@ public class MainApp extends javax.swing.JFrame {
 
         Sx.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         Sx.setForeground(new java.awt.Color(230, 230, 230));
-        jPanel1.add(Sx, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 360, -1, -1));
+        Sx.setText("0");
+        jPanel1.add(Sx, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 360, -1, -1));
 
         Sx2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         Sx2.setForeground(new java.awt.Color(230, 230, 230));
-        jPanel1.add(Sx2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 360, -1, -1));
+        Sx2.setText("0");
+        jPanel1.add(Sx2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 360, -1, -1));
 
         Sy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         Sy.setForeground(new java.awt.Color(230, 230, 230));
-        jPanel1.add(Sy, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 360, -1, -1));
+        Sy.setText("=");
+        jPanel1.add(Sy, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 460, -1, -1));
 
         S2x.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         S2x.setForeground(new java.awt.Color(230, 230, 230));
-        jPanel1.add(S2x, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 410, -1, -1));
+        S2x.setText("0");
+        jPanel1.add(S2x, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 410, -1, -1));
 
         S3x2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         S3x2.setForeground(new java.awt.Color(230, 230, 230));
-        jPanel1.add(S3x2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 460, -1, -1));
+        S3x2.setText("0");
+        jPanel1.add(S3x2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 460, -1, -1));
 
         n.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         n.setForeground(new java.awt.Color(230, 230, 230));
-        jPanel1.add(n, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 360, -1, -1));
+        n.setText("0");
+        jPanel1.add(n, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 360, -1, -1));
 
         s2x2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         s2x2.setForeground(new java.awt.Color(230, 230, 230));
-        jPanel1.add(s2x2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 410, -1, -1));
+        s2x2.setText("0");
+        jPanel1.add(s2x2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 410, -1, -1));
 
         s2x3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         s2x3.setForeground(new java.awt.Color(230, 230, 230));
-        jPanel1.add(s2x3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 410, -1, -1));
+        s2x3.setText("0");
+        jPanel1.add(s2x3, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 410, -1, -1));
 
         Sx2y.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         Sx2y.setForeground(new java.awt.Color(230, 230, 230));
-        jPanel1.add(Sx2y, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 460, -1, -1));
+        Sx2y.setText("0");
+        jPanel1.add(Sx2y, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 460, -1, -1));
 
         Sxy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         Sxy.setForeground(new java.awt.Color(230, 230, 230));
-        jPanel1.add(Sxy, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 410, -1, -1));
+        Sxy.setText("0");
+        jPanel1.add(Sxy, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 410, -1, -1));
 
         S3x3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         S3x3.setForeground(new java.awt.Color(230, 230, 230));
-        jPanel1.add(S3x3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 460, -1, -1));
+        S3x3.setText("0");
+        jPanel1.add(S3x3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 460, -1, -1));
 
         S3x4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         S3x4.setForeground(new java.awt.Color(230, 230, 230));
-        jPanel1.add(S3x4, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 460, -1, -1));
+        S3x4.setText("0");
+        jPanel1.add(S3x4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 460, -1, -1));
 
-        labelArreglos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Grupo 6.png"))); // NOI18N
-        jPanel1.add(labelArreglos, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 310, 320, 220));
+        Sy1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Sy1.setForeground(new java.awt.Color(230, 230, 230));
+        Sy1.setText("0");
+        jPanel1.add(Sy1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 360, -1, -1));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 510, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 190, Short.MAX_VALUE)
-        );
+        Sy2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Sy2.setForeground(new java.awt.Color(230, 230, 230));
+        Sy2.setText("=");
+        jPanel1.add(Sy2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 360, -1, -1));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 510, 190));
+        Sy3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Sy3.setForeground(new java.awt.Color(230, 230, 230));
+        Sy3.setText("=");
+        jPanel1.add(Sy3, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 410, -1, -1));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 570, 570));
+        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 150)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("{");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 310, -1, -1));
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 150)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("}");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 310, -1, -1));
+
+        funcionLabel.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        funcionLabel.setForeground(new java.awt.Color(204, 204, 204));
+        jPanel1.add(funcionLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, -1, -1));
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel5.setText("Función:");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, -1, -1));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -130, 600, 580));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -195,8 +231,8 @@ public class MainApp extends javax.swing.JFrame {
                 
                 // Asignacion y calculo de puntos
                 for (int i = 0; i < cantidadPuntos; i++) {
-                    double x = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el valor de X" + i));
-                    double y = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el valor de Y" + i));
+                    double x = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el valor de X" + (i+1)));
+                    double y = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el valor de Y" + (i+1)));
 
                     xi[i] = x ; // Valor de X
                     yi[i] = y ; // Valor de Y
@@ -230,7 +266,7 @@ public class MainApp extends javax.swing.JFrame {
                 this.n.setText(Integer.toString(cantidadPuntos));
                 this.Sx.setText(Double.toString(Sxi));
                 this.Sx2.setText(Double.toString(Sxi2));
-                this.Sy.setText(Double.toString(Syi));
+                this.Sy1.setText(Double.toString(Syi));
                 
                 this.S2x.setText(Double.toString(Sxi));
                 this.s2x2.setText(Double.toString(Sxi2));
@@ -327,9 +363,13 @@ public class MainApp extends javax.swing.JFrame {
                 Ry = determinanteY / determinanteSistema;
                 Rz = determinanteZ / determinanteSistema;
                 
-                System.out.println("X: " + Rx );
-                System.out.println("Y: " + Ry );
-                System.out.println("Z: " + Rz );
+                String funcionMensaje = "";
+                
+                funcionMensaje += Rx;
+                funcionMensaje += ((Ry > 0)?"+":"-")+Ry+"x";
+                funcionMensaje += ((Rz > 0)?"+":"-")+Rz+"x^2";
+                
+                this.funcionLabel.setText(funcionMensaje);
             }
             
         } catch (Exception e) {
@@ -395,13 +435,18 @@ public class MainApp extends javax.swing.JFrame {
     private javax.swing.JLabel Sx2y;
     private javax.swing.JLabel Sxy;
     private javax.swing.JLabel Sy;
+    private javax.swing.JLabel Sy1;
+    private javax.swing.JLabel Sy2;
+    private javax.swing.JLabel Sy3;
+    private javax.swing.JLabel funcionLabel;
     private javax.swing.JTextField inputCantidadPuntos;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JLabel labelArreglos;
     private javax.swing.JLabel n;
     private javax.swing.JLabel s2x2;
     private javax.swing.JLabel s2x3;
