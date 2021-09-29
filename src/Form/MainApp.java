@@ -5,6 +5,7 @@
  */
 package Form;
 
+import Entidades.Matriz;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -39,19 +40,18 @@ public class MainApp extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         inputCantidadPuntos = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
+        Sx = new javax.swing.JLabel();
+        Sx2 = new javax.swing.JLabel();
+        Sy = new javax.swing.JLabel();
+        S2x = new javax.swing.JLabel();
+        S3x2 = new javax.swing.JLabel();
+        n = new javax.swing.JLabel();
+        s2x2 = new javax.swing.JLabel();
+        s2x3 = new javax.swing.JLabel();
+        Sx2y = new javax.swing.JLabel();
+        Sxy = new javax.swing.JLabel();
+        S3x3 = new javax.swing.JLabel();
+        S3x4 = new javax.swing.JLabel();
         labelArreglos = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
 
@@ -95,70 +95,53 @@ public class MainApp extends javax.swing.JFrame {
         });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 260, 150, 30));
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(230, 230, 230));
-        jLabel3.setText("10");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 360, -1, -1));
+        Sx.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Sx.setForeground(new java.awt.Color(230, 230, 230));
+        jPanel1.add(Sx, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 360, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(230, 230, 230));
-        jLabel4.setText("10");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 360, -1, -1));
+        Sx2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Sx2.setForeground(new java.awt.Color(230, 230, 230));
+        jPanel1.add(Sx2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 360, -1, -1));
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(230, 230, 230));
-        jLabel5.setText("10");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 360, -1, -1));
+        Sy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Sy.setForeground(new java.awt.Color(230, 230, 230));
+        jPanel1.add(Sy, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 360, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(230, 230, 230));
-        jLabel6.setText("10");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 410, -1, -1));
+        S2x.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        S2x.setForeground(new java.awt.Color(230, 230, 230));
+        jPanel1.add(S2x, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 410, -1, -1));
 
-        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(230, 230, 230));
-        jLabel7.setText("10");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 460, -1, -1));
+        S3x2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        S3x2.setForeground(new java.awt.Color(230, 230, 230));
+        jPanel1.add(S3x2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 460, -1, -1));
 
-        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(230, 230, 230));
-        jLabel8.setText("10");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 360, -1, -1));
+        n.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        n.setForeground(new java.awt.Color(230, 230, 230));
+        jPanel1.add(n, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 360, -1, -1));
 
-        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(230, 230, 230));
-        jLabel9.setText("10");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 410, -1, -1));
+        s2x2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        s2x2.setForeground(new java.awt.Color(230, 230, 230));
+        jPanel1.add(s2x2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 410, -1, -1));
 
-        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(230, 230, 230));
-        jLabel10.setText("10");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 410, -1, -1));
+        s2x3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        s2x3.setForeground(new java.awt.Color(230, 230, 230));
+        jPanel1.add(s2x3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 410, -1, -1));
 
-        jLabel11.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(230, 230, 230));
-        jLabel11.setText("10");
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 460, -1, -1));
+        Sx2y.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Sx2y.setForeground(new java.awt.Color(230, 230, 230));
+        jPanel1.add(Sx2y, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 460, -1, -1));
 
-        jLabel12.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(230, 230, 230));
-        jLabel12.setText("10");
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 410, -1, -1));
+        Sxy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Sxy.setForeground(new java.awt.Color(230, 230, 230));
+        jPanel1.add(Sxy, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 410, -1, -1));
 
-        jLabel13.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(230, 230, 230));
-        jLabel13.setText("10");
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 460, -1, -1));
+        S3x3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        S3x3.setForeground(new java.awt.Color(230, 230, 230));
+        jPanel1.add(S3x3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 460, -1, -1));
 
-        jLabel14.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(230, 230, 230));
-        jLabel14.setText("10");
-        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 460, -1, -1));
-
-        jLabel15.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(230, 230, 230));
-        jLabel15.setText("10");
-        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 460, -1, -1));
+        S3x4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        S3x4.setForeground(new java.awt.Color(230, 230, 230));
+        jPanel1.add(S3x4, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 460, -1, -1));
 
         labelArreglos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Grupo 6.png"))); // NOI18N
         jPanel1.add(labelArreglos, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 310, 320, 220));
@@ -239,6 +222,114 @@ public class MainApp extends javax.swing.JFrame {
                 Sxi = sumatoria(xi); // Sumatoria de xi
                 Sxi2 = sumatoria(xi2); // Sumatoria de xi^2
                 Sxi3 = sumatoria(xi3); // Sumatoria de xi^3
+                Sxi4 = sumatoria(xi4); // Sumatoria de xi^4
+                Sxiyi = sumatoria(xiyi); // Sumatoria de xi*yi
+                Sxi2yi = sumatoria(xi2yi); // Sumatoria de xi^2*yi
+                Syi = sumatoria(yi);
+                
+                this.n.setText(Integer.toString(cantidadPuntos));
+                this.Sx.setText(Double.toString(Sxi));
+                this.Sx2.setText(Double.toString(Sxi2));
+                this.Sy.setText(Double.toString(Syi));
+                
+                this.S2x.setText(Double.toString(Sxi));
+                this.s2x2.setText(Double.toString(Sxi2));
+                this.s2x3.setText(Double.toString(Sxi3));
+                this.Sxy.setText(Double.toString(Sxiyi));
+                
+                this.S3x2.setText(Double.toString(Sxi2));
+                this.S3x3.setText(Double.toString(Sxi3));
+                this.S3x4.setText(Double.toString(Sxi4));
+                this.Sx2y.setText(Double.toString(Sxi2yi));
+                
+                
+                 double[][] matrizSistema = {
+                {
+                    cantidadPuntos,
+                    Sxi,
+                    Sxi2
+                },
+                {
+                    Sxi,
+                    Sxi2,
+                    Sxi3
+                },
+                {
+                    Sxi2,
+                    Sxi3,
+                    Sxi4
+                },
+
+            };
+
+            double[][] matrizX = {
+                {
+                    Syi,
+                    Sxi,
+                    Sxi2
+                },
+                {
+                    Sxiyi,
+                    Sxi2,
+                    Sxi3
+                },
+                {
+                    Sxi2yi,
+                    Sxi3,
+                    Sxi4
+                },
+            };
+
+            double[][] matrizY = {
+                {
+                    cantidadPuntos,
+                    Syi,
+                    Sxi2
+                },
+                {
+                    Sxi,
+                    Sxiyi,
+                    Sxi3
+                },
+                {
+                    Sxi2,
+                    Sxi2yi,
+                    Sxi4
+                },
+            };
+
+            double[][] matrizZ = {
+                {
+                    cantidadPuntos,
+                    Sxi,
+                    Syi
+                },
+                {
+                    Sxi,
+                    Sxi2,
+                    Sxiyi
+                },
+                {
+                    Sxi2,
+                    Sxi3,
+                    Sxi2yi
+                },
+            };
+            
+                double determinanteSistema = calcularDeterminante(matrizSistema);
+                double determinanteX = calcularDeterminante(matrizX);
+                double determinanteY = this.calcularDeterminante(matrizY);
+                double determinanteZ = this.calcularDeterminante(matrizZ);
+                
+                double Rx , Ry , Rz;
+
+                Rx = determinanteX / determinanteSistema;
+                Ry = determinanteY / determinanteSistema;
+                Rz = determinanteZ / determinanteSistema;
+                
+                System.out.println("X: " + Rx );
+                System.out.println("Y: " + Ry );
+                System.out.println("Z: " + Rz );
             }
             
         } catch (Exception e) {
@@ -250,7 +341,15 @@ public class MainApp extends javax.swing.JFrame {
         
         this.inputCantidadPuntos.setText("0");
     }//GEN-LAST:event_jButton1ActionPerformed
-
+     
+    double calcularDeterminante(double[][] matriz){
+        double resultado = 0;
+        
+        resultado =((matriz[0][0] * matriz[1][1]* matriz[2][2]) + (matriz[0][1] * matriz[1][2]* matriz[2][0]) +(matriz[2][1] * matriz[1][0]* matriz[0][2])) 
+                   -((matriz[0][2] * matriz[1][1]* matriz[2][0])+(matriz[0][0] * matriz[2][1]* matriz[1][2])+(matriz[2][2] * matriz[1][0]* matriz[0][1]));
+        
+        return resultado;
+    }
     /**
      * @param args the command line arguments
      */
@@ -287,26 +386,25 @@ public class MainApp extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel S2x;
+    private javax.swing.JLabel S3x2;
+    private javax.swing.JLabel S3x3;
+    private javax.swing.JLabel S3x4;
+    private javax.swing.JLabel Sx;
+    private javax.swing.JLabel Sx2;
+    private javax.swing.JLabel Sx2y;
+    private javax.swing.JLabel Sxy;
+    private javax.swing.JLabel Sy;
     private javax.swing.JTextField inputCantidadPuntos;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel labelArreglos;
+    private javax.swing.JLabel n;
+    private javax.swing.JLabel s2x2;
+    private javax.swing.JLabel s2x3;
     private javax.swing.JTable tablaCoordenadas;
     // End of variables declaration//GEN-END:variables
 
