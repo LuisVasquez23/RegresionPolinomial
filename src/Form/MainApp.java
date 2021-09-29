@@ -279,5 +279,5 @@ public class MainApp extends javax.swing.JFrame {
     private javax.swing.JLabel labelArreglos;
     private javax.swing.JTable tablaCoordenadas;
     // End of variables declaration//GEN-END:variables
-   Entidades.Grafica grafica = new Entidades.Grafica("Mi titulo","x","y");
+
 }
